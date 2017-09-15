@@ -25,7 +25,7 @@ Steps to run the app:
         "author": "Paulo Coelho",
         "title": "The Alchemist"
     }
-    ```
+```
 4. For `PUT` request, navigate to the following link and add the following to request body
 `http://localhost:9000/api/books/{id}`
 
@@ -38,7 +38,7 @@ Steps to run the app:
         "read": true
     }
 ```
-    The `Read` property will get updated from false to true, keeping all other properties unchanged.
+    The **read** property will get updated from false to true, keeping all other properties unchanged.
 
 5. For `PATCH` request, you will have to get the ID by doing `GET` command and visit the link - `http://localhost:9000/api/books/{id}` and add the change to be made to request body. refer below
     {
