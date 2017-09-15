@@ -20,7 +20,8 @@ Steps to run the app:
 ` http://localhost:9000/api/books/`
     using Postman.
 3. For `POST` request, navigate to the same link and add the following to request body (sample)
-```{
+```
+    {
         "genre": "Fiction",
         "author": "Paulo Coelho",
         "title": "The Alchemist"
@@ -31,7 +32,8 @@ Steps to run the app:
 
 **Note:** You can get the ID from any of the books by issuing `GET` command.
 
-```{
+```
+    {
         "genre": "Fiction",
         "author": "Paulo Coelho",
         "title": "The Alchemist",
@@ -41,8 +43,10 @@ Steps to run the app:
     The **read** property will get updated from false to true, keeping all other properties unchanged.
 
 5. For `PATCH` request, you will have to get the ID by doing `GET` command and visit the link - `http://localhost:9000/api/books/{id}` and add the change to be made to request body. refer below
+```   
     {
         "title": "My Book",
     }
+```
 
 7. In order to `DELETE` a resource, you need to visit the same link as above and just select `DELETE` verb from the       postman dropdown menu
