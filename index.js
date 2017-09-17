@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 mongoose.connect('mongodb://localhost:27017/booksDB');
 db = mongoose.connection;
 db.on('connected', function () {
-    console.log('Connected to mongoDB');
+    console.log('Connected to mongo database');
 })
 //Database conection messages
 db.on('error', function () {

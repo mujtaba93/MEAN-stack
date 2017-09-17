@@ -8,6 +8,4 @@ var bookModel = new Schema({
     read: { type: Boolean, default: false }
 });
 
-// var bookMongoModel = mongoose.model('Book', bookModel);
-// module.exports.bookModel = bookMongoModel;
 module.exports = mongoose.model('Book', bookModel); 

@@ -50,3 +50,12 @@ Steps to run the app:
 ```
 
 7. In order to `DELETE` a resource, you need to visit the same link as above and just select `DELETE` verb from the       postman dropdown menu
+
+**Running Test cases**
+
+1. The test cases have been written in Protractor, which can be found in tests/e2e folder.
+
+2. In order to run the test cases, first start the app server from command line by issuing `gulp` command. Follow all 
+   the steps above in order to start the server.
+
+3. Once you have started the app server, you can issue `gulp test` command from other console, in order to run the       test cases.

@@ -15,21 +15,17 @@ testApp.controller('bookController', ['$scope', '$http', '$location', function (
     //Get ID of selected book
     $scope.getBookIdOfSelectedBook = function (id) {
         $scope.id = id;
-        // alert($scope.id);
         $scope.getBookDetails(id);
-        window.location.href = "./../views/book_details.html?book_id=" + id;
-        // return $scope.id
+        // window.location.href = "./../views/book_details.html?book_id=" + id;
     }
-    //Get details of single book
 
+    //Get details of single book
     $scope.getBookDetails = function (id) {
         $http.get("/api/books/" + id)
             .success(function (response) {
-                // alert(id)
                 console.log('Inside')
                 $scope.singleBook = JSON.stringify(response);
-                console.log("Single book :: " +JSON.stringify(response))
-                // window.location.href
+                console.log("Single book :: " + JSON.stringify(response))
             }, function errorCallback(response) {
                 console.log("Unable to perform get request");
             });

@@ -2,7 +2,7 @@
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-    
+    <title>View all books</title>
 </head>
 
 <body ng-controller="bookController" ng-cloak>
@@ -25,20 +25,14 @@
                     <td>{{book.author}} </td>
                     <td>{{book.genre}}</td>
                     <td>{{book.read}}</td>
-                    <td><a ng-click="getBookIdOfSelectedBook(book._id)"
-                        class ="btn btn-primary">Details</a></td>
+                    <td><a ng-click="getBookIdOfSelectedBook(book._id)" class="btn btn-primary">Details</a></td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <script>
-        
-    </script>
     <script src="./../controllers/booksController.js"></script>
     <link rel="stylesheet" href="./css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="./css/sandstone.css" media="screen">
-
-   
 </body>
 
 </html>

@@ -24,7 +24,7 @@ var bookController = function (Book) {
         book.save();
         res.status(201).send(book);
     }
-    return{
+    return {
         get: get,
         post: post
     }

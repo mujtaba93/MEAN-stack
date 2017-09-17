@@ -26,8 +26,6 @@ var routes = function (Book) {
 
     router.route('/books/:bookID')
         .get(function (req, res) {
-            // if(bookObj === undefined)
-            //     console.log('Book not found');
             res.json(req.book);
         })
 
